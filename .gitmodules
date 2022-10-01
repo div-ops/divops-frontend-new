@@ -2,3 +2,7 @@
 	path = shared
 	url = git@github.com:div-ops/divops-frontend-shared.git
   ignore = dirty
+[submodule "app.divops.kr/hello-world"]
+	path = app.divops.kr/hello-world
+	url = git@github.com:div-ops/app.divops.kr-hello-world.git
+  ignore = dirty

@@ -2,7 +2,8 @@
   "name": "divops-frontend-template",
   "private": true,
   "workspaces": [
-    "shared/*"
+    "shared/*",
+    "app.divops.kr/*"
   ],
   "version": "1.0.0",
   "main": "index.js",
