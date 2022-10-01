@@ -1,5 +1,9 @@
 {
   "name": "divops-frontend-template",
+  "private": true,
+  "workspaces": [
+    "shared/*"
+  ],
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:div-ops/divops-frontend-template.git",
