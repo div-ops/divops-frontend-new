@@ -1,0 +1,12 @@
+{
+  "name": "divops-frontend-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:div-ops/divops-frontend-template.git",
+  "author": "seokho-jeong <seokho.jeong@toss.im>",
+  "license": "MIT",
+  "packageManager": "yarn@3.2.3",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
