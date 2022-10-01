@@ -12,6 +12,9 @@
   "license": "MIT",
   "packageManager": "yarn@3.2.3",
   "devDependencies": {
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.3"
+  },
+  "resolutions": {
+    "typescript": "4.8.3"
   }
 }
