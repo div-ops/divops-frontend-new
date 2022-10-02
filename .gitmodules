@@ -6,3 +6,6 @@
 	path = app.divops.kr/hello-world
 	url = git@github.com:div-ops/app.divops.kr-hello-world.git
   ignore = dirty
+[submodule "app.divops.kr/terms"]
+	path = app.divops.kr/terms
+	url = git@github.com:div-ops/app.divops.kr-terms.git
