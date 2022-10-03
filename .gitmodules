@@ -10,3 +10,6 @@
 [submodule "app.divops.kr/self-review"]
 	path = app.divops.kr/self-review
 	url = git@github.com:div-ops/app.divops.kr-self-review.git
+[submodule "app.divops.kr/voca"]
+	path = app.divops.kr/voca
+	url = git@github.com:div-ops/app.divops.kr-voca.git
