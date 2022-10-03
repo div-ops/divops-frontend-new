@@ -30,6 +30,8 @@ echo "# app.divops.kr-$serviceName" >./README.md
 
 ../../.scripts/replace.sh ./package.json hello-world $serviceName || exit 1
 
+../../.scripts/replace.sh ./next.config.js hello-world $serviceName || exit 1
+
 echo "✅ REPO 초기 설정 완료"
 
 git update-ref -d HEAD || exit 1
