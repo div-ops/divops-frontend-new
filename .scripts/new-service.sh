@@ -59,3 +59,13 @@ git add -A
 git commit -m "feat: $serviceName 스캐폴딩"
 
 git push origin HEAD
+
+echo "✅ VERCEL 설정을 하세요!"
+
+COMMAND="npx vercel-submodules --all && yarn install"
+echo "👉 INSTALL COMMAND: \"$COMMAND\""
+
+IGNORE='[[ $VERCEL_GIT_COMMIT_MESSAGE == *"skip vercel"* ]] && exit 0 || exit 1'
+echo "👉 Ignored Build Step: \"$IGNORE\""
+
+open "https://vercel.com/new/divops-monorepo"
