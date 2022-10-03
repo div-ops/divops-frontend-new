@@ -1,11 +1,12 @@
 [submodule "shared"]
 	path = shared
 	url = git@github.com:div-ops/divops-frontend-shared.git
-  ignore = dirty
 [submodule "app.divops.kr/hello-world"]
 	path = app.divops.kr/hello-world
 	url = git@github.com:div-ops/app.divops.kr-hello-world.git
-  ignore = dirty
 [submodule "app.divops.kr/terms"]
 	path = app.divops.kr/terms
 	url = git@github.com:div-ops/app.divops.kr-terms.git
+[submodule "app.divops.kr/self-review"]
+	path = app.divops.kr/self-review
+	url = git@github.com:div-ops/app.divops.kr-self-review.git
