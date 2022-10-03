@@ -5,6 +5,10 @@
     "shared/*",
     "app.divops.kr/*"
   ],
+  "scripts": {
+    "new-service": "./.scripts/new-service.sh",
+    "reset-submodules": "./.scripts/reset-submodules.sh"
+  },
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:div-ops/divops-frontend-template.git",
