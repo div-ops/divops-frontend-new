@@ -13,3 +13,6 @@
 [submodule "app.divops.kr/voca"]
 	path = app.divops.kr/voca
 	url = git@github.com:div-ops/app.divops.kr-voca.git
+[submodule "app.divops.kr/api"]
+	path = app.divops.kr/api
+	url = git@github.com:div-ops/app.divops.kr-api.git
