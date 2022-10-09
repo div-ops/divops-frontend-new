@@ -16,3 +16,6 @@
 [submodule "app.divops.kr/api"]
 	path = app.divops.kr/api
 	url = git@github.com:div-ops/app.divops.kr-api.git
+[submodule "app.divops.kr/login"]
+	path = app.divops.kr/login
+	url = git@github.com:div-ops/app.divops.kr-login.git
