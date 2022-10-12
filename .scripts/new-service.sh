@@ -24,7 +24,7 @@ gh repo create --public --add-readme div-ops/$domain-$serviceName || exit 1
 
 echo "✅ REPO create 완료"
 
-cd $domain/hello-world || exit 1
+cd app.divops.kr/hello-world || exit 1
 
 git remote add $serviceName git@github.com:div-ops/$domain-$serviceName.git || exit 1
 
