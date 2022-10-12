@@ -46,6 +46,8 @@ git switch main
 
 echo "# $domain-$serviceName" >./README.md
 
+../../.scripts/replace.sh ./package.json app.divops.kr $domain || exit 1
+
 ../../.scripts/replace.sh ./package.json hello-world $serviceName || exit 1
 
 ../../.scripts/replace.sh ./next.config.js hello-world $serviceName || exit 1
