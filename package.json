@@ -3,7 +3,8 @@
   "private": true,
   "workspaces": [
     "shared/*",
-    "app.divops.kr/*"
+    "app.divops.kr/*",
+    "www.creco.services/*"
   ],
   "scripts": {
     "new-service": "./.scripts/new-service.sh",
