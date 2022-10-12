@@ -1,0 +1,39 @@
+name: deploy
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  deploy:
+    if: (!contains(github.event.head_commit.message, 'skip vercel'))
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.PAT }}
+          submodules: true
+
+      - name: yarn && build and export
+        run: |
+          yarn
+          yarn build
+          yarn next export
+
+      - name: deploy to public storage
+        run: |
+          rm -rf public-storage 
+          git clone https://$CRECO_STORAGE@github.com/creco-storage/public-storage.git
+          
+          cd public-storage
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          rm -rf ./creco.services/github-editor
+          mv ../out ./creco.services/github-editor
+          git add -A
+          git -c core.hookspath=/dev/null commit -m "${{ github.event.head_commit.message }}"
+          git push origin HEAD
+        env:
+          CRECO_STORAGE: ${{ secrets.CRECO_STORAGE }}

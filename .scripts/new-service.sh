@@ -58,6 +58,11 @@ git update-ref -d HEAD || exit 1
 
 echo "✅ REPO commits 리셋 완료"
 
+case $domain in "www.creco.services")
+  cp ../../.template/deploy.yml ./.github/workflows/deploy.yml
+  ;;
+esac
+
 yarn || exit 1
 
 yarn prepare || exit 1
