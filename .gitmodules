@@ -19,3 +19,6 @@
 [submodule "app.divops.kr/login"]
 	path = app.divops.kr/login
 	url = git@github.com:div-ops/app.divops.kr-login.git
+[submodule "www.creco.services/github-editor"]
+	path = www.creco.services/github-editor
+	url = git@github.com:div-ops/www.creco.services-github-editor.git
