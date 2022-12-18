@@ -335,7 +335,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.19.1
     "@divops/frontend-configs-cli": "workspace:^"
-    "@divops/github-oauth": 0.0.3
+    "@divops/github-oauth": 0.0.5
     "@emotion/babel-plugin": ^11.10.2
     "@emotion/react": ^11.10.4
     "@types/babel__core": ^7
@@ -446,7 +446,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@divops/github-oauth@npm:0.0.3":
+"@divops/github-oauth@npm:0.0.5":
+  version: 0.0.5
+  resolution: "@divops/github-oauth@npm:0.0.5"
+  dependencies:
+    axios: ^0.27
+  checksum: 137e5c00aaacfd3758a3f7b9db022359d3f3e28223f54e6d2101f184b5e18273d3005874c7c2562b2ab70c78e38bcc84d440971cc8333cd6e934b8647de7e6f9
+  languageName: node
+  linkType: hard
+
+"@divops/github-oauth@npm:^0.0.3":
   version: 0.0.3
   resolution: "@divops/github-oauth@npm:0.0.3"
   dependencies:
@@ -461,6 +470,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.19.1
     "@divops/frontend-configs-cli": "workspace:^"
+    "@divops/github-oauth": ^0.0.3
     "@emotion/babel-plugin": ^11.10.2
     "@emotion/react": ^11.10.4
     "@types/babel__core": ^7
@@ -470,6 +480,7 @@ __metadata:
     "@types/react-dom": 18.0.6
     "@typescript-eslint/eslint-plugin": ^5.36.2
     "@typescript-eslint/parser": ^5.36.2
+    axios: ^0.27
     eslint: 8.23.1
     eslint-config-next: 12.3.1
     eslint-plugin-import: ^2.26.0
