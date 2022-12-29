@@ -335,7 +335,8 @@ __metadata:
   dependencies:
     "@babel/core": ^7.19.1
     "@divops/frontend-configs-cli": "workspace:^"
-    "@divops/github-oauth": ^0.0.24
+    "@divops/gist-storage": ^0.0.3
+    "@divops/github-oauth": ^0.0.26
     "@emotion/babel-plugin": ^11.10.2
     "@emotion/react": ^11.10.4
     "@types/babel__core": ^7
@@ -447,12 +448,29 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@divops/github-oauth@npm:^0.0.24":
-  version: 0.0.24
-  resolution: "@divops/github-oauth@npm:0.0.24"
+"@divops/gist-storage@npm:^0.0.3":
+  version: 0.0.3
+  resolution: "@divops/gist-storage@npm:0.0.3"
+  checksum: e5a01d522541a2a332824ffa0742727f48b94e54a4f60ac2b308be445af33e6e9518e9721140e83a77049cb2dce0c9fa1cba9d826cc181aadc8646bad9126629
+  languageName: node
+  linkType: hard
+
+"@divops/github-oauth@npm:^0.0.26":
+  version: 0.0.26
+  resolution: "@divops/github-oauth@npm:0.0.26"
   dependencies:
+    "@divops/simple-crypto": ^0.0.1
     axios: ^0.27
-  checksum: 7bee157af475ec7a2c2449601762062028686e0438ca95718c3ab784e2253a0148790f492abdc28a52c7f533e010b433c603ce1a0c195e7d7f5a0e8b01f35ce3
+  peerDependencies:
+    "@divops/gist-storage": "*"
+  checksum: f51434bebc36dda16e789f163ae69531dde8cf857e71c482276b6f765670aad216b52b47e5b5baa2438c40c674aac1e53fd64ba4c11036cceb86baeed32a20db
+  languageName: node
+  linkType: hard
+
+"@divops/simple-crypto@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "@divops/simple-crypto@npm:0.0.1"
+  checksum: 039a16b7c4d07d9463df3bf8655d5ca5fb77fa917f8b5fb7406ae5f00631680b019f393e2d1b83bd6d5f2e7d1f0f88db3853b3516460c228c2003a9505ce95aa
   languageName: node
   linkType: hard
 
