@@ -303,6 +303,32 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@divops/app.divops.kr-github-api@workspace:app.divops.kr/github-api":
+  version: 0.0.0-use.local
+  resolution: "@divops/app.divops.kr-github-api@workspace:app.divops.kr/github-api"
+  dependencies:
+    "@babel/core": ^7.19.1
+    "@divops/frontend-configs-cli": "workspace:^"
+    "@emotion/babel-plugin": ^11.10.2
+    "@emotion/react": ^11.10.4
+    "@types/babel__core": ^7
+    "@types/eslint": ^8
+    "@types/node": 18.7.18
+    "@types/react": 18.0.21
+    "@types/react-dom": 18.0.6
+    "@typescript-eslint/eslint-plugin": ^5.36.2
+    "@typescript-eslint/parser": ^5.36.2
+    eslint: 8.23.1
+    eslint-config-next: 12.3.1
+    eslint-plugin-import: ^2.26.0
+    husky: ^8.0.1
+    next: 12.3.1
+    react: 18.2.0
+    react-dom: 18.2.0
+    typescript: 4.8.3
+  languageName: unknown
+  linkType: soft
+
 "@divops/app.divops.kr-hello-world@workspace:app.divops.kr/hello-world":
   version: 0.0.0-use.local
   resolution: "@divops/app.divops.kr-hello-world@workspace:app.divops.kr/hello-world"
@@ -335,8 +361,9 @@ __metadata:
   dependencies:
     "@babel/core": ^7.19.1
     "@divops/frontend-configs-cli": "workspace:^"
-    "@divops/gist-storage": ^0.0.4
-    "@divops/github-oauth": ^0.0.27
+    "@divops/gist-storage": ^0.0.7
+    "@divops/github-oauth": ^0.0.41
+    "@divops/github-oauth-sdk": ^0.0.1
     "@emotion/babel-plugin": ^11.10.2
     "@emotion/react": ^11.10.4
     "@types/babel__core": ^7
@@ -448,31 +475,38 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@divops/gist-storage@npm:^0.0.4":
-  version: 0.0.4
-  resolution: "@divops/gist-storage@npm:0.0.4"
+"@divops/gist-storage@npm:^0.0.7":
+  version: 0.0.7
+  resolution: "@divops/gist-storage@npm:0.0.7"
   dependencies:
     "@octokit/rest": ^18.12.0
-  checksum: f802ddbf738528db04fa3c1ded1e1363cbaa6478c7939337fbe764a2e825bb575273897d4fd022bf8ed4fecb84916ac7db660277fc2431d1e05984c856511405
+  checksum: 874e1a88d1ca6bb6665df57f7acf9b009c3926553387def5bde115fd6ed1018f2c988f3d3fd9b5eb2bb3fc6d17f89de06f51aa9bc0e142f9984b569339601038
   languageName: node
   linkType: hard
 
-"@divops/github-oauth@npm:^0.0.27":
-  version: 0.0.27
-  resolution: "@divops/github-oauth@npm:0.0.27"
+"@divops/github-oauth-sdk@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "@divops/github-oauth-sdk@npm:0.0.1"
+  checksum: eb4aa6de931d575deb4b902b8946dafb3aadd9593cdbabd6a2cfad781ca1470c8072fb44abd1e5b5ac96b9824e6d31e05df44f0165af269427a8bf73c570fd65
+  languageName: node
+  linkType: hard
+
+"@divops/github-oauth@npm:^0.0.41":
+  version: 0.0.41
+  resolution: "@divops/github-oauth@npm:0.0.41"
   dependencies:
-    "@divops/simple-crypto": ^0.0.1
+    "@divops/simple-crypto": ^0.0.2
     axios: ^0.27
   peerDependencies:
     "@divops/gist-storage": "*"
-  checksum: 609faa236ee6d517c3477c315796d59ab0c50ca1d7c8ea95443a1db972a6bafac7b7b0124279579e7743602a2a7f7660f249fa65092145d29f56e5aafa01e160
+  checksum: e183babe06525dfd7e5831bff341a6a330ed6fe17cefc2e40c103280803fd89db50f938b6d62befd2d042004099f8090d9dd52e8d7ea84347ab8429d857382e1
   languageName: node
   linkType: hard
 
-"@divops/simple-crypto@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "@divops/simple-crypto@npm:0.0.1"
-  checksum: 039a16b7c4d07d9463df3bf8655d5ca5fb77fa917f8b5fb7406ae5f00631680b019f393e2d1b83bd6d5f2e7d1f0f88db3853b3516460c228c2003a9505ce95aa
+"@divops/simple-crypto@npm:^0.0.2":
+  version: 0.0.2
+  resolution: "@divops/simple-crypto@npm:0.0.2"
+  checksum: 56a497a0f4f6f42de2d13abffff3b6e6c0d731fb5167c6a2e273ba4f93ca269c76474540d020095f93a2fb4c1e71f3407399f465854735d4da000a32ac116fdf
   languageName: node
   linkType: hard
 
