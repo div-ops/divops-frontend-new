@@ -25,3 +25,6 @@
 [submodule "app.divops.kr/github-api"]
 	path = app.divops.kr/github-api
 	url = git@github.com:div-ops/app.divops.kr-github-api.git
+[submodule "www.creco.services/memory-map"]
+	path = www.creco.services/memory-map
+	url = git@github.com:div-ops/www.creco.services-memory-map.git
