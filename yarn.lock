@@ -309,9 +309,8 @@ __metadata:
   dependencies:
     "@babel/core": ^7.19.1
     "@divops/frontend-configs-cli": "workspace:^"
-    "@divops/gist-storage": ^0.0.18
-    "@divops/github-oauth": ^0.0.84
-    "@divops/github-oauth-sdk": ^0.0.11
+    "@divops/gist-storage": ^0.0.20
+    "@divops/github-oauth": ^0.0.87
     "@emotion/babel-plugin": ^11.10.2
     "@emotion/react": ^11.10.4
     "@types/babel__core": ^7
@@ -365,9 +364,6 @@ __metadata:
   dependencies:
     "@babel/core": ^7.19.1
     "@divops/frontend-configs-cli": "workspace:^"
-    "@divops/gist-storage": ^0.0.7
-    "@divops/github-oauth": ^0.0.42
-    "@divops/github-oauth-sdk": ^0.0.1
     "@emotion/babel-plugin": ^11.10.2
     "@emotion/react": ^11.10.4
     "@types/babel__core": ^7
@@ -490,21 +486,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@divops/gist-storage@npm:^0.0.18":
-  version: 0.0.18
-  resolution: "@divops/gist-storage@npm:0.0.18"
+"@divops/gist-storage@npm:^0.0.20":
+  version: 0.0.20
+  resolution: "@divops/gist-storage@npm:0.0.20"
   dependencies:
     "@octokit/rest": ^18.12.0
-  checksum: 696f1afd4daf7c2d5e28fe67405259f4ac308f3744cd39b98056871825b6c10e5f0e9d6945b6357e18f477c107f56490360f3b932b416856bba2263d7dc1025a
-  languageName: node
-  linkType: hard
-
-"@divops/gist-storage@npm:^0.0.7":
-  version: 0.0.7
-  resolution: "@divops/gist-storage@npm:0.0.7"
-  dependencies:
-    "@octokit/rest": ^18.12.0
-  checksum: 874e1a88d1ca6bb6665df57f7acf9b009c3926553387def5bde115fd6ed1018f2c988f3d3fd9b5eb2bb3fc6d17f89de06f51aa9bc0e142f9984b569339601038
+  checksum: 604fd31c7c9bbdf5f690e9d807751f5f451fad5f30edffa5ca06ab6434d98e840e5cd38264ca0a0c8e9760984bbc72fee9865e0f1ed6285f17f808df629b3dc7
   languageName: node
   linkType: hard
 
@@ -517,36 +504,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@divops/github-oauth-sdk@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "@divops/github-oauth-sdk@npm:0.0.1"
-  checksum: eb4aa6de931d575deb4b902b8946dafb3aadd9593cdbabd6a2cfad781ca1470c8072fb44abd1e5b5ac96b9824e6d31e05df44f0165af269427a8bf73c570fd65
-  languageName: node
-  linkType: hard
-
-"@divops/github-oauth-sdk@npm:^0.0.11":
-  version: 0.0.11
-  resolution: "@divops/github-oauth-sdk@npm:0.0.11"
-  checksum: f7bdd2b44cd4a79a7b6cde002e3eb5beb9cf10ae79f2337f82a9a09a5e2e7d8100ba94001b20b1b27b59b9dd77d5f88d963d3bd27957e8eaff1ebf6c3e1a5304
-  languageName: node
-  linkType: hard
-
 "@divops/github-oauth-sdk@npm:^0.0.6":
   version: 0.0.6
   resolution: "@divops/github-oauth-sdk@npm:0.0.6"
   checksum: 650bab63a92412add29b8715e410ab94004d4d893d1c4fddaee9a3e4bc759a2e0c402ebcb60e75892150c72273987e7446cefa3624018d574f3e0fd0fd8e9791
-  languageName: node
-  linkType: hard
-
-"@divops/github-oauth@npm:^0.0.42":
-  version: 0.0.42
-  resolution: "@divops/github-oauth@npm:0.0.42"
-  dependencies:
-    "@divops/simple-crypto": ^0.0.2
-    axios: ^0.27
-  peerDependencies:
-    "@divops/gist-storage": "*"
-  checksum: df7d0effa062811e7788ba316a9e10dee4404914f971be2f7520a49eacc0c8191e373c1f94149447c90e78df08572b28210b7ac6df26a03ed4b64d6d6943d946
   languageName: node
   linkType: hard
 
@@ -562,15 +523,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@divops/github-oauth@npm:^0.0.84":
-  version: 0.0.84
-  resolution: "@divops/github-oauth@npm:0.0.84"
+"@divops/github-oauth@npm:^0.0.87":
+  version: 0.0.87
+  resolution: "@divops/github-oauth@npm:0.0.87"
   dependencies:
-    "@divops/simple-crypto": ^0.0.7
+    "@divops/simple-crypto": ^0.0.9
     axios: ^0.27
   peerDependencies:
     "@divops/gist-storage": "*"
-  checksum: 28f3384425a51bb4d3fa1a5f4c3119a711f9423246198d1c81c67ff665f21ba737c0626cf43defe844d1539dd1da4fefa799b3deea222f4087613b7183a168ac
+    next: ">=12"
+    react: ">=18"
+    react-dom: ">=18"
+  checksum: ab214028fc8a85d2fab908fab510da5ce8dc6dbc1efbc98ef30f3c8f3ecda63d7eb302dd595b07989e6afc704e72fa2d6aaa06de1088ac91a7527880e4b65d3d
   languageName: node
   linkType: hard
 
@@ -581,10 +545,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@divops/simple-crypto@npm:^0.0.7":
-  version: 0.0.7
-  resolution: "@divops/simple-crypto@npm:0.0.7"
-  checksum: e3fd0882387f19d244dc0e815a33e799d84eadcf278b37817c88e57e8ac833fed726745c92e91a0d94559204ba0534b0484d2d122032fbf8fef8a5fe5df4fa55
+"@divops/simple-crypto@npm:^0.0.9":
+  version: 0.0.9
+  resolution: "@divops/simple-crypto@npm:0.0.9"
+  checksum: 335b9ea5df6aef2979e7f61b22e534c815a791ca1fe39047580903b61b68d66e460dbdc15af8fa49c84effa388cbc2bda28231a0e7424f138c5b954c9341606e
   languageName: node
   linkType: hard
 
