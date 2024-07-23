@@ -277,6 +277,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@divops-packages/gist-crud-core@npm:^0.3.6":
+  version: 0.3.7
+  resolution: "@divops-packages/gist-crud-core@npm:0.3.7"
+  dependencies:
+    "@octokit/rest": ^18
+  checksum: 10f609b1a506fc3e44203e75857d4dcafe8ba45a148d6cad2e2abfcf1c2a7224587829258ec55fc04b5522d3bac338fb354dc80b72547a8c7ae1acb85f1d384d
+  languageName: node
+  linkType: hard
+
+"@divops-packages/node-utils@npm:^0.1.2":
+  version: 0.1.3
+  resolution: "@divops-packages/node-utils@npm:0.1.3"
+  checksum: b5a5b49e0c7e7516fe218d7840949ab72228cf471bd8860ae43ed4c32263859527b9f90c9a60e567e1f0873cd6c1c4a3eb67a80712078b04bf0e17de84ae6ee5
+  languageName: node
+  linkType: hard
+
 "@divops/app.divops.kr-api@workspace:app.divops.kr/api":
   version: 0.0.0-use.local
   resolution: "@divops/app.divops.kr-api@workspace:app.divops.kr/api"
@@ -308,9 +324,11 @@ __metadata:
   resolution: "@divops/app.divops.kr-github-api@workspace:app.divops.kr/github-api"
   dependencies:
     "@babel/core": ^7.19.1
+    "@divops-packages/gist-crud-core": ^0.3.6
+    "@divops-packages/node-utils": ^0.1.2
     "@divops/frontend-configs-cli": "workspace:^"
     "@divops/gist-storage": ^0.0.20
-    "@divops/github-oauth": ^0.0.108
+    "@divops/github-oauth": ^0.0.112
     "@emotion/babel-plugin": ^11.10.2
     "@emotion/react": ^11.10.4
     "@types/babel__core": ^7
@@ -515,9 +533,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@divops/github-oauth@npm:^0.0.108":
-  version: 0.0.108
-  resolution: "@divops/github-oauth@npm:0.0.108"
+"@divops/github-oauth@npm:^0.0.112":
+  version: 0.0.112
+  resolution: "@divops/github-oauth@npm:0.0.112"
   dependencies:
     "@divops/simple-crypto": ^0.0.9
     axios: ^0.27
@@ -527,7 +545,7 @@ __metadata:
     next: ">=12"
     react: ">=18"
     react-dom: ">=18"
-  checksum: fce03b50674e1dabd1e6720c9cea6c7c06c1ca25ce5ee8ab4d6dbb2c407bb8c4c63842a29e9d3e3431e38e6a0b00fe3caaabf9c3b83adc4ba465e12b9901c5d9
+  checksum: 89bfc99cc1a91472aafbf44ed03e5d91c2c9e4338656e8727804a2ed560c30ccbd8ccfc8f425a1f89fd6a2f177a52c6ff7a8bece77ac04f7d61318077cb12f98
   languageName: node
   linkType: hard
 
@@ -1062,7 +1080,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/rest@npm:^18.12.0":
+"@octokit/rest@npm:^18, @octokit/rest@npm:^18.12.0":
   version: 18.12.0
   resolution: "@octokit/rest@npm:18.12.0"
   dependencies:
