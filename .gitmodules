@@ -28,3 +28,6 @@
 [submodule "www.creco.services/memory-map"]
 	path = www.creco.services/memory-map
 	url = git@github.com:div-ops/www.creco.services-memory-map.git
+[submodule "app.divops.kr/static-zicdding-upload"]
+	path = app.divops.kr/static-zicdding-upload
+	url = git@github.com:div-ops/app.divops.kr-static-zicdding-upload.git
